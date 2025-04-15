@@ -16,8 +16,7 @@ Este portfólio irá apresentar:
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/) *(opcional, caso esteja usando)*
-- [React Router](https://reactrouter.com/) *(se houver navegação entre páginas)*
+- [Vite](https://vitejs.dev/)
 
 ## 🚧 Status do Projeto
 
