@@ -1,11 +1,21 @@
 import './Home.css'
-import Typewriter from '../../components/Typewriter'
+import HeaderMenu from '../../components/Header'
+import Homes from '../../components/Homes'
+import About from '../../components/About'
+import Service from '../../components/Service'
+import Contact from '../../components/Contact'
+import Footer from '../../components/Footer'
 
 function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      <Typewriter text="Em construção..." speed={150} />
-    </h1>
+    <>
+    <HeaderMenu />
+    <Homes />
+    <About />
+    <Service />
+    <Contact />
+    <Footer />
+    </>
   )
 }
 
