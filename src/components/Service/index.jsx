@@ -6,7 +6,7 @@ export default function Service() {
                 <div className="p-6 bg-gray-700 rounded-lg">
                     <h3 className="text-2xl font-semibold mb-4">Front-End</h3>
                     <img 
-                        src="./src/assets/react.svg" 
+                        src="../src/assets/react.svg" 
                         alt="React" 
                         className="mx-auto mb-4 h-16 w-16" 
                     />
@@ -16,12 +16,12 @@ export default function Service() {
                     <h3 className="text-2xl font-semibold mb-4">Back-End</h3>
                     <div className="flex justify-center mb-4">
                         <img 
-                            src="src/assets/php.svg" 
+                            src="../src/assets/php.svg" 
                             alt="PHP" 
                             className="h-16 w-16 mx-2" 
                         />
                         <img 
-                            src="src/assets/nestjs.svg" 
+                            src="../src/assets/nestjs.svg" 
                             alt="NestJS" 
                             className="h-16 w-16 mx-2" 
                         />
@@ -32,12 +32,12 @@ export default function Service() {
                     <h3 className="text-2xl font-semibold mb-4">Banco de Dados</h3>
                     <div className="flex justify-center mb-4">
                         <img 
-                            src="src/assets/mysql.svg" 
+                            src="../src/assets/mysql.svg" 
                             alt="MySQL" 
                             className="h-16 w-16 mx-2" 
                         />
                         <img 
-                            src="src/assets/postgresql-icon.svg" 
+                            src="../src/assets/postgresql-icon.svg" 
                             alt="PostgreSQL" 
                             className="h-16 w-16 mx-2" 
                         />
