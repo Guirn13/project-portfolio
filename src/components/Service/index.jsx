@@ -1,8 +1,8 @@
-import reactLogo from '../../assets/react.svg';
-import phpLogo from '../../assets/php.svg';
-import nestLogo from '../../assets/nestjs.svg';
-import mysqlLogo from '../../assets/mysql.svg';
-import postgresLogo from '../../assets/postgresql-icon.svg';
+import reactLogo from '../../assets/react.svg'
+import phpLogo from '../../assets/php.svg'
+import nestLogo from '../../assets/nestjs.svg'
+import mysqlLogo from '../../assets/mysql.svg'
+import postgresLogo from '../../assets/postgresql-icon.svg'
 
 export default function Service() {
     return (
@@ -52,5 +52,5 @@ export default function Service() {
                 </div>
             </div>
         </section>
-    );
+    )
 }
