@@ -1,3 +1,9 @@
+import reactLogo from '../../assets/react.svg';
+import phpLogo from '../../assets/php.svg';
+import nestLogo from '../../assets/nestjs.svg';
+import mysqlLogo from '../../assets/mysql.svg';
+import postgresLogo from '../../assets/postgresql-icon.svg';
+
 export default function Service() {
     return (
         <section id="services" className="py-20 bg-gray-900 text-white text-center">
@@ -6,7 +12,7 @@ export default function Service() {
                 <div className="p-6 bg-gray-700 rounded-lg">
                     <h3 className="text-2xl font-semibold mb-4">Front-End</h3>
                     <img 
-                        src="/assets/react.svg" 
+                        src={reactLogo} 
                         alt="React" 
                         className="mx-auto mb-4 h-16 w-16" 
                     />
@@ -16,12 +22,12 @@ export default function Service() {
                     <h3 className="text-2xl font-semibold mb-4">Back-End</h3>
                     <div className="flex justify-center mb-4">
                         <img 
-                            src="/assets/php.svg" 
+                            src={phpLogo} 
                             alt="PHP" 
                             className="h-16 w-16 mx-2" 
                         />
                         <img 
-                            src="/assets/nestjs.svg" 
+                            src={nestLogo} 
                             alt="NestJS" 
                             className="h-16 w-16 mx-2" 
                         />
@@ -32,12 +38,12 @@ export default function Service() {
                     <h3 className="text-2xl font-semibold mb-4">Banco de Dados</h3>
                     <div className="flex justify-center mb-4">
                         <img 
-                            src="/assets/mysql.svg" 
+                            src={mysqlLogo} 
                             alt="MySQL" 
                             className="h-16 w-16 mx-2" 
                         />
                         <img 
-                            src="/assets/postgresql-icon.svg" 
+                            src={postgresLogo} 
                             alt="PostgreSQL" 
                             className="h-16 w-16 mx-2" 
                         />
@@ -46,5 +52,5 @@ export default function Service() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
