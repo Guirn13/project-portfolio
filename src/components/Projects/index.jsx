@@ -1,7 +1,7 @@
-import "./index.css";
-import Imagecep from '../../assets/cep.webp';
-import Financas from '../../assets/financas.webp';
-import Tarefas from '../../assets/tarefas.webp';
+import "./index.css"
+import Imagecep from '../../assets/cep.webp'
+import Financas from '../../assets/financas.webp'
+import Tarefas from '../../assets/tarefas.webp'
 
 const projectsInfo = [
     {
@@ -22,7 +22,7 @@ const projectsInfo = [
         description: "Aplicativo para busca de informações de endereço a partir do CEP informado pelo usuário. Este é um projeto simples em PHP que utiliza HTML, CSS e Bootstrap para buscar informações de CEP através da API ViaCEP.",
         link: "https://github.com/Guirn13/BuscarCEP",
     },
-];
+]
 
 export default function Projects() {
     return (
@@ -54,5 +54,5 @@ export default function Projects() {
                 ))}
             </div>
         </section>
-    );
+    )
 }
