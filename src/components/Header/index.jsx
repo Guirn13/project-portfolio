@@ -10,17 +10,30 @@ export default function Portfolio() {
                 <div className="text-2xl font-bold text-sky-600">GUIRN</div>
 
                 <button
-                    className="md:hidden p-2"
                     onClick={() => setMenuOpen(!menuOpen)}
+                    style={{
+                        backgroundColor: "black",
+                        color: "white",
+                        padding: "0.5rem",
+                        borderRadius: "0.375rem",
+                        border: "none",
+                        boxShadow: "none",
+                    }}
                 >
-                    {menuOpen ? <X size={24} /> : <Menu size={24} />}
+                    {menuOpen ? (
+                        <X size={24} color="white" />
+                    ) : (
+                        <Menu size={24} color="white" />
+                    )}
                 </button>
+
+
 
                 <nav
                     className={`
                         ${menuOpen ? "block" : "hidden"}
                         absolute top-16 left-0 w-full bg-black text-center py-4
-                        md:static md:flex md:space-x-5 md:py-0 md:bg-transparent md:w-auto md:block
+                        md:static md:flex md:space-x-5 md:py-0 md:bg-black md:w-auto md:block
                     `}
                 >
                     <a href="#home" className="block px-4 py-2 hover:text-gray-400 text-sky-100">
