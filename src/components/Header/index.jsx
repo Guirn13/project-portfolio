@@ -9,23 +9,21 @@ export default function Portfolio() {
             <header className="flex items-center justify-between p-4 bg-black text-white w-full fixed top-0 left-0 z-50">
                 <div className="text-2xl font-bold text-sky-600">GUIRN</div>
 
-                <button
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    style={{
-                        backgroundColor: "black",
-                        color: "white",
-                        padding: "0.5rem",
-                        borderRadius: "0.375rem",
-                        border: "none",
-                        boxShadow: "none",
-                    }}
-                >
-                    {menuOpen ? (
-                        <X size={24} color="white" />
-                    ) : (
-                        <Menu size={24} color="white" />
-                    )}
-                </button>
+                <div className="md:hidden">
+                    <button
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        style={{
+                            backgroundColor: "black",
+                            color: "white",
+                            padding: "0.5rem",
+                            borderRadius: "0.375rem",
+                            border: "none",
+                            boxShadow: "none",
+                        }}
+                    >
+                        {menuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
 
 
 
