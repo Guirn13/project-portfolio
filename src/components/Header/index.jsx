@@ -6,7 +6,7 @@ export default function Portfolio() {
 
     return (
         <div>
-            <header className="flex items-center justify-between p-4 bg-neutral-950 text-white w-full fixed top-0 left-0 z-50">
+            <header className="flex items-center justify-between p-4 bg-black text-white w-full fixed top-0 left-0 z-50">
                 <div className="text-2xl font-bold text-sky-600">GUIRN</div>
 
                 <button
@@ -19,7 +19,7 @@ export default function Portfolio() {
                 <nav
                     className={`
                         ${menuOpen ? "block" : "hidden"}
-                        absolute top-16 left-0 w-full bg-neutral-900 text-center py-4
+                        absolute top-16 left-0 w-full bg-black text-center py-4
                         md:static md:flex md:space-x-5 md:py-0 md:bg-transparent md:w-auto md:block
                     `}
                 >
@@ -31,6 +31,9 @@ export default function Portfolio() {
                     </a>
                     <a href="#services" className="block px-4 py-2 hover:text-gray-400 text-sky-600">
                         Serviços
+                    </a>
+                    <a href="#project" className="block px-4 py-2 hover:text-gray-400 text-sky-600">
+                        Projetos
                     </a>
                     <a href="#contact" className="block px-4 py-2 hover:text-gray-400 text-sky-600">
                         Contato
