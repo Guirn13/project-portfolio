@@ -45,7 +45,7 @@ export default function Projects() {
                                 </div>
                             </div>
 
-                            <div className="flip-card-back p-6 bg-gray-700 rounded-lg">
+                            <div className="flip-card-back p-6 text-white bg-gray-700 rounded-lg">
                                 <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
                                 <p>{project.description}</p>
                             </div>
