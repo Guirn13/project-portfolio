@@ -1,23 +1,47 @@
-# 🌐 Portfólio Pessoal — Em Construção
+# Portfólio – Guilherme (Guirn13)
 
-Bem-vindo(a) ao repositório do meu portfólio pessoal! 🚧  
-Este projeto está sendo desenvolvido com **React** e **Tailwind CSS**, com o objetivo de criar uma vitrine digital moderna, responsiva e com foco em performance.
+Demo: [Acessar Portfólio](https://project-portfolio-6qkh74o3o-guirn13s-projects.vercel.app/)  
+GitHub: [@Guirn13](https://github.com/Guirn13)
 
-## ✨ Objetivo
+## Sobre
+Portfólio pessoal criado para apresentar meus projetos e habilidades. Focado em simplicidade, performance e fácil manutenção.
 
-Este portfólio irá apresentar:
+## Stack
+- React + Vite + TypeScript
+- (Opcional) Tailwind CSS
+- Deploy: Vercel
 
-- Meus principais projetos
-- Tecnologias que utilizo
-- Um pouco sobre mim e minha trajetória
-- Links para redes sociais e contato
+## Projetos (exemplos)
+- Bot WPP Finance – automação via WhatsApp  
+- Lista de Tarefas – app de tarefas simples  
+- Template Vite React – base para novos projetos  
+- Este Portfólio
 
-## 🛠️ Tecnologias Utilizadas
 
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
+## Como Rodar Localmente
+```bash
+git clone https://github.com/Guirn13/project-portfolio.git
+cd project-portfolio
+pnpm install   # ou npm install / yarn
+pnpm dev
+```
 
-## 🚧 Status do Projeto
+Build:
+```bash
+pnpm build && pnpm preview
+```
 
-> 🟡 Em desenvolvimento
+## Estrutura (resumida)
+```
+src/
+  components/
+  pages/
+  data/
+  assets/
+  main.tsx
+```
+
+Se achar útil, deixa uma ⭐
+
+---
+Feito por @Guirn13
