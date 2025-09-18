@@ -11,7 +11,7 @@ Portfólio pessoal criado para apresentar meus projetos e habilidades. Focado em
 - Tailwind CSS
 - Deploy: Vercel
 
-## Projetos (exemplos)
+## Projetos
 - Bot WPP Finance – automação via WhatsApp  
 - Lista de Tarefas – app de tarefas simples  
 - Template Vite React – base para novos projetos  
@@ -31,7 +31,7 @@ Build:
 pnpm build && pnpm preview
 ```
 
-## Estrutura (resumida)
+## Estrutura
 ```
 src/
   components/
