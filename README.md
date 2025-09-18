@@ -8,7 +8,7 @@ Portfólio pessoal criado para apresentar meus projetos e habilidades. Focado em
 
 ## Stack
 - React + Vite + TypeScript
-- (Opcional) Tailwind CSS
+- Tailwind CSS
 - Deploy: Vercel
 
 ## Projetos (exemplos)
