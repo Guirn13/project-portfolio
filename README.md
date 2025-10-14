@@ -1,7 +1,6 @@
 # Portfólio – Guilherme (Guirn13)
 
-Demo: [Acessar Portfólio](https://project-portfolio-6qkh74o3o-guirn13s-projects.vercel.app/)  
-GitHub: [@Guirn13](https://github.com/Guirn13)
+Demo: [Acessar Portfólio](project-portfolio-hazel.vercel.app)  
 
 ## Sobre
 Portfólio pessoal criado para apresentar meus projetos e habilidades. Focado em simplicidade, performance e fácil manutenção.
