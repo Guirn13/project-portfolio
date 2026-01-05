@@ -5,7 +5,7 @@ export default function Homes() {
   return (
     <section
       id="home"
-      className="h-180 relative overflow-hidden flex items-center bg-gray-900 justify-center"
+      className="min-h-screen relative overflow-hidden flex items-center bg-gradient-to-b from-gray-900 via-gray-900 to-black justify-center pt-20"
     >
       <div className="absolute inset-0 z-0">
         <DotGrid
@@ -23,13 +23,17 @@ export default function Homes() {
         />
       </div>
 
-      <div className="relative z-10 text-center text-gray-100">
+      <div className="absolute inset-0 z-5 bg-black/40"></div>
+
+      <div className="relative z-10 text-center text-gray-100 px-6 animate-fade-in">
         <Typewriter
-          className="text-5xl font-bold mb-4 "
+          className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent"
           text="Bem-vindo ao meu portfólio"
           speed={150}
         />
-        <p className="text-2xl">I am developer 🧑🏻‍💻</p>
+        <p className="text-xl md:text-2xl text-gray-100 font-light tracking-wide">
+          I am developer 🧑🏻‍💻
+        </p>
       </div>
     </section>
   );
