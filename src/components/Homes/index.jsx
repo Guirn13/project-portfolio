@@ -32,7 +32,7 @@ export default function Homes() {
           speed={150}
         />
         <p className="text-xl md:text-2xl text-gray-100 font-light tracking-wide">
-          I am developer 🧑🏻‍💻
+          I am developer
         </p>
       </div>
     </section>
