@@ -18,5 +18,37 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      'max-len': [
+        'error',
+        {
+          code: 100,
+          tabWidth: 2,
+          ignoreUrls: true,
+          ignoreStrings: true,
+          ignoreTemplateLiterals: true,
+          ignoreRegExpLiterals: true,
+        },
+      ],
+      indent: [
+        'error',
+        2,
+        {
+          SwitchCase: 1,
+        },
+      ],
+      'no-irregular-whitespace': 'error',
+      'no-multiple-empty-lines': [
+        'error',
+        {
+          max: 1,
+          maxEOF: 0,
+        },
+      ],
+      'no-trailing-spaces': 'error',
+      'object-curly-spacing': ['error', 'always'],
+      quotes: ['error', 'single'],
+      semi: ['error', 'never'],
+    },
   },
 ])

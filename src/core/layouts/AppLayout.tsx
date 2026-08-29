@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/react'
-import { Header } from '@shared/components/Header'
+import { Header } from '@/core/layouts/Header'
 
 export function AppLayout({ children }: PropsWithChildren) {
   return (
