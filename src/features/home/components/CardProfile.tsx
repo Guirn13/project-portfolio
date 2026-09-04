@@ -1,4 +1,5 @@
 import { Badge, Box, Image, Link, Text } from '@chakra-ui/react'
+import profileImage from '../../../core/assets/profile.png'
 
 export function CardProfile() {
   return (
@@ -124,7 +125,7 @@ export function CardProfile() {
         boxShadow="0 0 42px rgba(34, 211, 238, 0.2)"
       >
         <Image
-          src=""
+          src={profileImage}
           alt="Foto de perfil"
           objectFit="cover"
           w="100%"
