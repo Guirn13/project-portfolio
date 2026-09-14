@@ -11,9 +11,9 @@ export type BlogArticle = {
 export const blogArticles: BlogArticle[] = [
   {
     slug: 'arquitetura-baseada-em-features',
-    title: 'Arquitetura Baseada em Features',
+    title: 'Arquitetura Baseada em Funcionalidades',
     description:
-      'Uma orientacao pratica sobre arquitetura baseada em features para organizar grandes codebases frontend de forma mais clara.',
+      'Uma orientação prática sobre arquitetura baseada em funcionalidades para organizar aplicações React de forma mais clara.',
     date: '2026-08-08',
     content: arquiteturaBaseadaEmFeatures,
   },

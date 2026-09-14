@@ -100,13 +100,15 @@ export function CardProfile() {
         >
           <Text color="gray.300">Para projetos ou colaboração:</Text>
           <Link
-            href="mailto:guinevers10@gmail.com"
+            href="https://www.linkedin.com/in/dev-guilhermeneves/"
+            target="_blank"
+            rel="noopener noreferrer"
             color="cyan.300"
             fontWeight="700"
             textDecoration="none"
             _hover={{ color: 'cyan.200', textDecoration: 'underline' }}
           >
-            guinevers10@gmail.com
+            LinkedIn
           </Link>
         </Box>
       </Box>

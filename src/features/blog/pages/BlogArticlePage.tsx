@@ -42,21 +42,22 @@ export function BlogArticlePage() {
       <VStack
         align="flex-start"
         gap="5"
-        maxW="760px"
+        maxW="1000px"
         mx="auto"
-        backgroundColor="blackAlpha.400"
-        px="4"
-        py="6"
-        borderRadius="md"
+        backgroundColor="#3d3c3c59"
+        px={{ base: 5, md: 10 }}
+        py={{ base: 8, md: 10 }}
+        borderRadius="xl"
       >
 
         <Text
           as="h1"
           color="cyan.400"
-          fontSize={{ base: '3xl', md: '5xl' }}
+          fontSize={{ base: '2xl', md: '4xl' }}
           fontWeight="800"
           lineHeight="1.1"
           textAlign="left"
+          whiteSpace="nowrap"
         >
           {article.title}
         </Text>
@@ -65,7 +66,7 @@ export function BlogArticlePage() {
           {article.description}
         </Text>
 
-        <MarkdownContent content={article.content} />
+        <MarkdownContent content={article.content.replace(/^# .+\r?\n/, '')} />
       </VStack>
     </Box>
   )
