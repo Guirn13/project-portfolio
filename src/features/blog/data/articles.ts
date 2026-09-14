@@ -14,7 +14,7 @@ export const blogArticles: BlogArticle[] = [
     title: 'Arquitetura Baseada em Funcionalidades',
     description:
       'Uma orientação prática sobre arquitetura baseada em funcionalidades para organizar aplicações React de forma mais clara.',
-    date: '2026-08-08',
+    date: '14-09-2026',
     content: arquiteturaBaseadaEmFeatures,
   },
 ]
