@@ -1,66 +1,88 @@
-# Feature-Based React Test
+# Portfólio — Guilherme Neves
 
-Projeto React + Vite + TypeScript organizado com Feature-Based Architecture,
-inspirado no artigo:
-https://naserrasouli.ir/en/blog/feature-based-react
+Portfólio pessoal de Guilherme Neves, desenvolvedor Front-End. Reúne minha apresentação profissional, projetos e artigos sobre desenvolvimento web.
 
-UI com Chakra UI e roteamento com TanStack Router.
+**Site:** [project-portfolio-hazel.vercel.app](https://project-portfolio-hazel.vercel.app/)
+**Contato:** [LinkedIn](https://www.linkedin.com/in/dev-guilhermeneves/)
 
-## Estrutura
+## Páginas
 
-```txt
-src/
-|-- core/
-|   |-- assets/      # Assets globais da aplicacao
-|   |-- layouts/     # Layouts globais
-|   |-- providers/   # Providers globais, como ChakraProvider
-|   `-- router/      # Rota raiz e agregacao das rotas
-|-- features/
-|   `-- home/
-|       |-- components/
-|       |-- pages/
-|       |-- routes.tsx
-|       `-- index.ts # API publica da feature
-|-- shared/
-|   |-- components/  # UI reutilizavel entre features
-|   |-- hooks/
-|   |-- services/
-|   |-- types/
-|   `-- utils/
-|-- App.tsx
-`-- main.tsx
-```
+- **Início (`/`):** apresentação e contato.
+- **Sobre (`/about`):** trajetória e habilidades.
+- **Projetos (`/project`):** seleção de projetos com links para o GitHub.
+- **Blog (`/blog`):** artigos técnicos escritos em Markdown.
+- **Artigo (`/blog/arquitetura-baseada-em-features`):** conteúdo sobre arquitetura baseada em funcionalidades no React.
 
-## Regras
+## Tecnologias
 
-- `features/*` concentra tudo que pertence a um dominio ou funcionalidade.
-- `core/*` fica com infraestrutura global: assets, layout base, providers,
-  configs e rotas de aplicacao.
-- `shared/*` recebe codigo realmente reutilizavel por mais de uma feature.
-- Features podem importar de `core` e `shared`.
-- Uma feature nao deve importar detalhes internos de outra feature.
-- Exponha o que for publico por `features/<nome>/index.ts`.
-- Prefira Chakra UI para estilos e componentes visuais.
-- Cada feature pode expor suas rotas em `features/<nome>/routes.tsx`.
+React 19, TypeScript, Vite 8, Chakra UI 3 e TanStack Router. ESLint para análise estática e Vercel para hospedagem.
 
-## Aliases
+## Executar localmente
 
-```ts
-import { AppLayout } from '@core/layouts/AppLayout'
-import { HomePage } from '@features/home'
-```
-
-Aliases configurados:
-
-- `@/*` -> `src/*`
-- `@core/*` -> `src/core/*`
-- `@features/*` -> `src/features/*`
-- `@shared/*` -> `src/shared/*`
-
-## Scripts
+Use Node.js 24 LTS e npm.
 
 ```bash
+git clone https://github.com/Guirn13/project-portfolio.git
+cd project-portfolio
+npm ci
 npm run dev
-npm run build
-npm run lint
 ```
+
+Abra o endereço informado pelo Vite no terminal, normalmente http://localhost:5173.
+
+## Comandos
+
+| Comando | Descrição |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento. |
+| `npm run build` | Verifica o TypeScript e gera a versão de produção em `dist/`. |
+| `npm run preview` | Serve localmente a versão compilada. |
+| `npm run lint` | Executa o ESLint. |
+| `npm run lint:fix` | Aplica as correções automáticas disponíveis. |
+
+## Organização
+
+O código é organizado por funcionalidade:
+
+```text
+src/
+├── core/               # Layouts, providers, assets e configuração do roteador
+├── features/
+│   ├── home/           # Apresentação e contato
+│   ├── About/          # Trajetória e habilidades
+│   ├── project/        # Cards e dados dos projetos
+│   └── blog/           # Artigos Markdown, dados e renderização
+├── shared/             # Componentes reutilizáveis
+├── App.tsx
+└── main.tsx
+```
+
+Os aliases `@/`, `@core/`, `@features/` e `@shared/` estão configurados no Vite e no TypeScript.
+
+## Atualizar o conteúdo
+
+- **Apresentação e contato:** `src/features/home/components/CardProfile.tsx`.
+- **Sobre:** `src/features/About/components/AboutPageContent.tsx`.
+- **Projetos:** `src/features/project/data/githubProjects.ts`.
+- **Blog:** crie o arquivo Markdown em `src/features/blog/content/`, importe-o com `?raw` e cadastre título, descrição, data e slug em `src/features/blog/data/articles.ts`.
+
+O renderizador do blog oferece suporte a títulos, parágrafos, listas, blocos de código, código inline, negrito, itálico e links HTTP/HTTPS.
+
+## Deploy na Vercel
+
+Conecte o repositório `Guirn13/project-portfolio` ao projeto da Vercel com a branch de produção `main`.
+
+- **Framework:** Vite.
+- **Diretório raiz:** raiz do repositório.
+- **Instalação:** `npm ci`.
+- **Build:** `npm run build`.
+- **Saída:** `dist`.
+- **Node.js:** 24.x.
+
+O arquivo `vercel.json` configura o build e o fallback para `index.html`, permitindo abrir ou atualizar diretamente rotas como `/blog/arquitetura-baseada-em-features`. A aplicação atual não exige variáveis de ambiente.
+
+Com a integração Git ativa, novos commits na `main` disparam o deploy de produção.
+
+## Referência de arquitetura
+
+A organização por funcionalidades foi inspirada no artigo [Scalable React Projects with Feature-Based Architecture, de Naser Rasouli](https://dev.to/naserrasouli/scalable-react-projects-with-feature-based-architecture-117c).
