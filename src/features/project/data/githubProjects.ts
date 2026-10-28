@@ -7,45 +7,45 @@ export type GithubProject = {
 
 export const githubProjects: GithubProject[] = [
   {
-    name: 'Bot Financeiro para WhatsApp',
+    name: "Bot Financeiro para WhatsApp",
     description:
-      'Bot para WhatsApp com foco em automações financeiras e integração de fluxos usando JavaScript.',
-    language: 'JavaScript',
-    href: 'https://github.com/Guirn13/bot-wpp-finance',
+      "Bot para WhatsApp com foco em automações financeiras e integração de fluxos usando JavaScript.",
+    language: "JavaScript",
+    href: "https://github.com/Guirn13/bot-wpp-finance",
   },
   {
-    name: 'Portfolio Pessoal',
+    name: "Portfolio Pessoal",
     description:
-      'Portfolio pessoal para apresentar perfil, projetos e conteúdos técnicos em uma interface React.',
-    language: 'JavaScript',
-    href: 'https://github.com/Guirn13/project-portfolio',
+      "Portfolio pessoal para apresentar perfil, projetos e conteúdos técnicos em uma interface React.",
+    language: "JavaScript",
+    href: "https://github.com/Guirn13/project-portfolio",
   },
   {
-    name: 'Calculadora de IMC',
+    name: "Calculadora de IMC",
     description:
-      'Calculadora de IMC desenvolvida em TypeScript para praticar componentes, estados e regras de interface.',
-    language: 'TypeScript',
-    href: 'https://github.com/Guirn13/calculadora-imc',
+      "Calculadora de IMC desenvolvida em TypeScript para praticar componentes, estados e regras de interface.",
+    language: "TypeScript",
+    href: "https://github.com/Guirn13/calculadora-imc",
   },
   {
-    name: 'Lista de Tarefas',
+    name: "Futebol de Mesa",
     description:
-      'Lista de tarefas com interação de arrastar e soltar, focada em organização visual e experiência de uso.',
-    language: 'TypeScript',
-    href: 'https://github.com/Guirn13/Lista-de-tarefas',
+      "Jogo de futebol de mesa desenvolvido em TypeScript, focado em lógica de jogo e interação com o usuário.",
+    language: "TypeScript",
+    href: "https://github.com/Guirn13/futebol-de-mesa",
   },
   {
-    name: 'API Buscar CEP',
+    name: "API Buscar CEP",
     description:
-      'Projeto em PHP para consulta de CEP, trabalhando consumo de dados externos e retorno de informações de endereço.',
-    language: 'PHP',
-    href: 'https://github.com/Guirn13/BuscarCEP',
+      "Projeto em PHP para consulta de CEP, trabalhando consumo de dados externos e retorno de informações de endereço.",
+    language: "PHP",
+    href: "https://github.com/Guirn13/BuscarCEP",
   },
   {
-    name: 'Cronometro React',
+    name: "Cronometro React",
     description:
-      'Cronometro criado com React para praticar controle de tempo, estado e atualização dinâmica da tela.',
-    language: 'JavaScript',
-    href: 'https://github.com/Guirn13/Cronometro-React',
+      "Cronometro criado com React para praticar controle de tempo, estado e atualização dinâmica da tela.",
+    language: "JavaScript",
+    href: "https://github.com/Guirn13/Cronometro-React",
   },
-]
+];
